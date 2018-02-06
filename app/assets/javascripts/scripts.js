@@ -355,8 +355,8 @@
                 thumbHeight: 50,
                 thumbAmount: 5,
 
-                navigationType: "both",
-                navigationArrows: "yes",
+                navigationType: "solo",
+                navigationArrows: "None",
                 navigationStyle: "round",
 
                 touchenabled: "on",

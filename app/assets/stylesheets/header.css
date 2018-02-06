@@ -1,6 +1,6 @@
 /*=== Header V2 ===*/
 body header.header-v3 {
-  background: rgba(0, 0, 0, 0.6);
+  background: #00DFFF;
   color: #fff; }
   body header.header-v3 .header_top {
     text-align: center; }
@@ -57,4 +57,4 @@ body header.header-v3 {
           color: #fff;
           background-color: #E1BD85; }
     body header.header-v3 .header_content:after {
-      background: rgba(0, 0, 0, 0.6); }
+      background: #00DFFF; }
