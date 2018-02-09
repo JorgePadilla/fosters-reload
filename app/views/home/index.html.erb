@@ -76,8 +76,13 @@
                         <a href="!#"><i class="fa fa-tumblr"></i></a>
                     </span>
                     <span class="login-register">
-                            <a href="login.html">Login</a>
-                            <a href="register.html">register</a>
+                        <% if logged_in? %>
+                         <%= link_to 'Logged in as ' + logged_in?.email, logout_path, method: :get %>
+                        <% else %>
+                               <%= link_to 'Log In', login_path, method: :get %>
+                            <%= link_to 'Register' , signup_path, method: :get %>
+                        <% end %>
+                        
                         </span>
                     <div class="dropdown currency">
                         <span>USD <i class="fa fa"></i></span>
@@ -96,7 +101,7 @@
                     </div>
                 </div>
                 <!-- HEADER LOGO -->
-                <a class="logo-top img-responsive" href="#"><img src="assets/foster_logo2.png" alt=""></a>
+                <a class="logo-top img-responsive" href="#"><img src="assets/foster_logo.png" alt="" width = "70" height="70"></a>
                
                 <!-- END / HEADER LOGO -->
 
@@ -126,12 +131,13 @@
                                 <li class="current-menu-item"><a href="index-4.html">Home 4</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.html">About</a></li>
-
                         <li>
-                            <a href="#">Room </a>
+                            <a href="#">Rooms</a>
                            
                         </li>
+                        <li><a href="about.html">About</a></li>
+
+                        
                         <li>
                             <a href="#">Restaurant <span class="fa fa-caret-down"></span></a>
                             <ul class="sub-menu">
