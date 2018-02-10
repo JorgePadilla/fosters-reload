@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <!-- TITLE -->
-    <title>Login</title>
+    <title>ROOM 5</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
@@ -14,16 +14,14 @@
     <link href='http://fonts.googleapis.com/css?family=Hind:400,300,500,600%7cMontserrat:400,700' rel='stylesheet' type='text/css'>
 
     <!-- CSS LIBRARY -->
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/font-lotusicon.css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="assets/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="assets/settings.css">
-    
-     <%= stylesheet_link_tag '/css/lib/bootstrap-select.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-select.min.css">
 
     <!-- MAIN STYLE -->
     <link rel="stylesheet" type="text/css" href="assets/style.css">
@@ -39,12 +37,13 @@
 <!--[if IE 9]> <body class="ie9 lt-ie10"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
 
-
+    
     <!-- PRELOADER -->
     <div id="preloader">
         <span class="preloader-dot"></span>
     </div>
     <!-- END / PRELOADER -->
+
 
     <!-- PAGE WRAP -->
     <div id="page-wrap">
@@ -63,7 +62,7 @@
                     <div class="header_right float-right">
 
                         <span class="login-register">
-                            <a class="active" href="login.html">Login</a>
+                            <a href="login.html">Login</a>
                             <a href="register.html">register</a>
                         </span>
 
@@ -111,20 +110,13 @@
                                     <li><a href="index-4.html">Home 4</a></li>
                                 </ul>
                             </li>
+                            <li class="current-menu-item">
+                                <a href="#">Rooms</a>
+                              
+                            </li>
                             <li><a href="about.html">About</a></li>
                             
-                            <li>
-                                <a href="#">Room <span class="fa fa-caret-down"></span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="room-1.html">Room 1</a></li>
-                                    <li><a href="room-2.html">Room 2</a></li>
-                                    <li><a href="room-3.html">Room 3</a></li>
-                                    <li><a href="room-4.html">Room 4</a></li>
-                                    <li><a href="room-5.html">Room 5</a></li>
-                                    <li><a href="room-6.html">Room 6</a></li>
-                                    <li><a href="room-detail.html">Room Detail</a></li>
-                                </ul>
-                            </li>
+                            
                             <li>
                                 <a href="#">Restaurant <span class="fa fa-caret-down"></span></a>
                                 <ul class="sub-menu">
@@ -220,39 +212,228 @@
         </header>
         <!-- END / HEADER -->
 
-        <!-- ACCOUNT -->
-        <section class="section-account parallax bg-11">
+        <!-- SUB BANNER -->
+        <section class="section-sub-banner bg-9">
             <div class="awe-overlay"></div>
-            <div class="container">
-                <div class="login-register">
+            <div class="sub-banner">
+                <div class="container">
                     <div class="text text-center">
-                        <h2>LOGIN ACCOUNT</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing</p>
-
-                        <%= form_tag sessions_path, class: "account_form"  do %>
-
-                             <div class="field-form">
-                                <%= text_field_tag  :email, params[:email], :class => "field-text", :placeholder => "Email*" %>
-                            </div>
-                            <div class="field-form">
-                                 <%= password_field_tag :password, '', :class => "field-text", :placeholder => "Password*" %>
-                                 <span class="view-pass"><i class="lotus-icon-view"></i></span>
-                            </div>
-
-                                 <div class="field-form field-submit">
-
-                                <%= submit_tag 'Login', :class => "awe-btn awe-btn-13" %>
-                                <span class="account-desc"> <%= link_to 'I don’t have an account  - ', signup_path, method: :get %> <a href="#">Forgot Password</a></span>
-
-                            </div>
-                        <% end %>
-
+                        <h2>ROOMS &amp; RATES</h2>
+                        <p>Lorem Ipsum is simply dummy text</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- END / ACCOUNT -->
+        <!-- END / SUB BANNER -->
 
+        <!-- ROOM -->
+        <section class="section-room bg-white">
+            <div class="container">
+
+                <div class="room-wrap-5">
+                    <div class="row">
+                        
+                        <!-- ITEM -->
+                        <div class="col-xs-6">
+                            <div class="room_item-5" data-background='https://r-fa.bstatic.com/images/hotel/max1024x768/615/61583596.jpg'>
+
+                                <div class="img">
+                                    <a href="#"><img src="https://q-fa.bstatic.com/images/hotel/max1024x768/615/61583627.jpg" alt=""></a>
+                                </div>
+
+                                <div class="room_item-forward">
+                                    <h2><a href="#">STANDARD APARTMENT</a></h2>
+                                    <span class="price">Start form $120 per day</span>
+                                </div>
+
+                                <div class="room_item-back">
+                                    <h3>STANDARD APARTMENT</h3>
+                                    <span class="price">Start form $120 per day</span>
+                                    <p>Lorem Ipsum is simply dummy text of the <b>printing</b> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                    <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="col-xs-6">
+                            <div class="room_item-5" data-background='https://r-fa.bstatic.com/images/hotel/max1024x768/115/115479033.jpg'>
+
+                                <div class="img">
+                                    <a href="#"><img src="https://r-fa.bstatic.com/images/hotel/max1024x768/115/115479033.jpg" alt=""></a>
+                                </div>
+
+                                <div class="room_item-forward">
+                                    <h2><a href="#">DELUXE APARTMENT</a></h2>
+                                    <span class="price">Start form $120 per day</span>
+                                </div>
+
+                                <div class="room_item-back">
+                                    <h3>DELUXE APARTMENT</h3>
+                                    <span class="price">Start form $120 per day</span>
+                                    <p>Lorem Ipsum is simply dummy text of the <b>printing</b> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                    <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="col-xs-6">
+                            <div class="room_item-5" data-background='https://r-fa.bstatic.com/images/hotel/max1024x768/626/62631338.jpg'>
+
+                                <div class="img">
+                                    <a href="#"><img src="https://r-fa.bstatic.com/images/hotel/max1024x768/626/62631338.jpg" alt=""></a>
+                                </div>
+
+                                <div class="room_item-forward">
+                                    <h2><a href="#"> SEA VIEW DOUBLE ROOM</a></h2>
+                                    <span class="price">Start form $120 per day</span>
+                                </div>
+
+                                <div class="room_item-back">
+                                    <h3>SEA VIEW DOUBLE ROOM</h3>
+                                    <span class="price">Start form $120 per day</span>
+                                    <p>Lorem Ipsum is simply dummy text of the <b>printing</b> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                    <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="col-xs-6">
+                            <div class="room_item-5"  data-background='https://r-fa.bstatic.com/images/hotel/max1024x768/115/115533276.jpg'>
+
+                                <div class="img">
+                                    <a href="#"><img src="https://r-fa.bstatic.com/images/hotel/max1024x768/115/115533276.jpg" alt=""></a>
+                                </div>
+
+                                <div class="room_item-forward">
+                                    <h2><a href="#">ONE-BEDROOM BUNGALOW</a></h2>
+                                    <span class="price">Start form $120 per day</span>
+                                </div>
+
+                                <div class="room_item-back">
+                                    <h3>ONE-BEDROOM BUNGALOW</h3>
+                                    <span class="price">Start form $120 per day</span>
+                                    <p>Lorem Ipsum is simply dummy text of the <b>printing</b> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                    <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="col-xs-6">
+                            <div class="room_item-5" data-background='https://r-fa.bstatic.com/images/hotel/max1024x768/115/115533583.jpg'>
+
+                                <div class="img">
+                                    <a href="#"><img src="https://r-fa.bstatic.com/images/hotel/max1024x768/115/115533583.jpg" alt=""></a>
+                                </div>
+
+                                <div class="room_item-forward">
+                                    <h2><a href="#">TWO-BEDROOM BUNGALOW</a></h2>
+                                    <span class="price">Start form $120 per day</span>
+                                </div>
+
+                                <div class="room_item-back">
+                                    <h3>TWO-BEDROOM BUNGALOW</h3>
+                                    <span class="price">Start form $120 per day</span>
+                                    <p>Lorem Ipsum is simply dummy text of the <b>printing</b> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                    <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="col-xs-6">
+                            <div class="room_item-5"  data-background='images/room/grid2/img-1.jpg'>
+
+                                <div class="img">
+                                    <a href="#"><img src="images/room/grid2/img-1.jpg" alt=""></a>
+                                </div>
+
+                                <div class="room_item-forward">
+                                    <h2><a href="#">FAMILY ROOM</a></h2>
+                                    <span class="price">Start form $120 per day</span>
+                                </div>
+
+                                <div class="room_item-back">
+                                    <h3>FAMILY ROOM</h3>
+                                    <span class="price">Start form $120 per day</span>
+                                    <p>Lorem Ipsum is simply dummy text of the <b>printing</b> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                    <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="col-xs-6">
+                            <div class="room_item-5"  data-background='images/room/grid2/img-1.jpg'>
+
+                                <div class="img">
+                                    <a href="#"><img src="images/room/grid2/img-1.jpg" alt=""></a>
+                                </div>
+
+                                <div class="room_item-forward">
+                                    <h2><a href="#">COUPLE ROOM</a></h2>
+                                    <span class="price">Start form $120 per day</span>
+                                </div>
+
+                                <div class="room_item-back">
+                                    <h3>COUPLE ROOM</h3>
+                                    <span class="price">Start form $120 per day</span>
+                                    <p>Lorem Ipsum is simply dummy text of the <b>printing</b> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                    <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                        <!-- ITEM -->
+                        <div class="col-xs-6">
+                            <div class="room_item-5" data-background='images/room/grid2/img-1.jpg'>
+
+                                <div class="img">
+                                    <a href="#"><img src="images/room/grid2/img-1.jpg" alt=""></a>
+                                </div>
+
+                                <div class="room_item-forward">
+                                    <h2><a href="#">FAMILY ROOM</a></h2>
+                                    <span class="price">Start form $120 per day</span>
+                                </div>
+
+                                <div class="room_item-back">
+                                    <h3>FAMILY ROOM</h3>
+                                    <span class="price">Start form $120 per day</span>
+                                    <p>Lorem Ipsum is simply dummy text of the <b>printing</b> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book ...</p>
+                                    <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END / ITEM -->
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- END / ROOM -->
+        
         <!-- FOOTER -->
         <footer id="footer">
 
@@ -365,7 +546,6 @@
             <div class="footer_bottom">
                 <div class="container">
                     <p>&copy; 2015 Lotus Hotel All rights reserved.</p>
-                     <%= debug(params) if Rails.env.development? %>
                 </div>
             </div>
             <!-- END / FOOTER BOTTOM -->
@@ -378,22 +558,21 @@
 
 
     <!-- LOAD JQUERY -->
-    <script type="text/javascript" src="js/lib/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/lib/bootstrap-select.js"></script>
+    <script type="text/javascript" src="assets/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-select.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
-    <script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="js/lib/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.appear.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.countTo.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.parallax-1.1.3.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/lib/SmoothScroll.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    
+    <script type="text/javascript" src="assets/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="assets/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/owl.carousel.js"></script>
+    <script type="text/javascript" src="assets/jquery.appear.min.js"></script>
+    <script type="text/javascript" src="assets/jquery.countTo.js"></script>
+    <script type="text/javascript" src="assets/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="assets/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="assets/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="assets/SmoothScroll.js"></script>
+    <script type="text/javascript" src="assets/scripts.js"></script>
 </body>
 </html>
