@@ -107,27 +107,13 @@
                     <nav class="header_menu">
                         <ul class="menu">
                             <li>
-                                <a href="index.html">Home <span class="fa fa-caret-down"></span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="index.html">Home 1</a></li>
-                                    <li><a href="index-2.html">Home 2</a></li>
-                                    <li><a href="index-3.html">Home 3</a></li>
-                                    <li><a href="index-4.html">Home 4</a></li>
-                                </ul>
-                            </li>
+                               <%= link_to 'Home', root_path, method: :get %>
+                            
+                        </li>
                             <li><a href="about.html">About</a></li>
                             
                             <li>
-                                <a href="#">Room <span class="fa fa-caret-down"></span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="room-1.html">Room 1</a></li>
-                                    <li><a href="room-2.html">Room 2</a></li>
-                                    <li><a href="room-3.html">Room 3</a></li>
-                                    <li><a href="room-4.html">Room 4</a></li>
-                                    <li><a href="room-5.html">Room 5</a></li>
-                                    <li><a href="room-6.html">Room 6</a></li>
-                                    <li><a href="room-detail.html">Room Detail</a></li>
-                                </ul>
+                                 <%= link_to 'Rooms', rooms_path, method: :get %>
                             </li>
                             <li>
                                 <a href="#">Restaurant <span class="fa fa-caret-down"></span></a>
@@ -206,7 +192,7 @@
                                     <li><a href="blog-detail-fullwidth.html">Blog Detail Fullwidth</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><%= link_to 'Contact', contactus_path, method: :get %></li>
                         </ul>
                     </nav>
                     <!-- END / HEADER MENU -->
