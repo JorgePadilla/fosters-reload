@@ -123,15 +123,15 @@
                 <nav class="header_menu">
                     <ul class="menu">
                         <li class="current-menu-item">
-                            <a href="index.html">Home <span class="fa fa-caret-down"></span></a>
-                            <ul class="sub-menu">
+                            <%= link_to 'Home', root_path, method: :get %>
+                            <!--<ul class="sub-menu">
                                 <li><a href="index.html">Home 1</a></li>
                                 <li><a href="index-2.html">Home 2</a></li>
                                 <li><a href="index-3.html">Home 3</a></li>
                                 <li class="current-menu-item"><a href="index-4.html">Home 4</a></li>
-                            </ul>
+                            </ul>-->
                         </li>
-                        <li>
+                    <li>
                             
                             <%= link_to 'Rooms', rooms_path, method: :get %>
                            
@@ -216,7 +216,7 @@
                                 <li><a href="blog-detail-fullwidth.html">Blog Detail Fullwidth</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><%= link_to 'Contact', contactus_path, method: :get %></li>
                     </ul>
                 </nav>
                 <!-- END / HEADER MENU -->
