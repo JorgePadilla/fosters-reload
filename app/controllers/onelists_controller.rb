@@ -1,0 +1,3 @@
+class OnelistsController < ApplicationController
+    
+end

@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180212024504) do
+ActiveRecord::Schema.define(version: 20180216170031) do
+
+  create_table "onelists", force: :cascade do |t|
+    t.string "text"
+    t.integer "room_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["room_id"], name: "index_onelists_on_room_id"
+  end
 
   create_table "rooms", force: :cascade do |t|
     t.string "name"
