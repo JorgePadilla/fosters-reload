@@ -10,4 +10,5 @@
 
 @standar = Room.find(1)
 
-Onelist.create! text: "Bathroom", room: @standar
+Secondlist.create! text: "TV", room: @standar
+
