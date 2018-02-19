@@ -32,8 +32,10 @@ class Calendar < Struct.new(:view, :date, :callback, :room)
 
     def day_cell(day)
       content_tag :td , class: day_classes(day) do
-        content_tag :a do
+      
+        content_tag :a do 
         content_tag :small, view.capture(day, &callback)
+        
         end
       end 
     
@@ -43,6 +45,7 @@ class Calendar < Struct.new(:view, :date, :callback, :room)
       classes = []
       classes << "apb-calendar_current-date" if day == Date.today
       classes << "not-available" if room.name == "Standard Apartment2"
+      classes << "notmonth" if day.month != date.month
       
       classes.empty? ? nil : classes.join(" ")
     end
