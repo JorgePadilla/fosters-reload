@@ -10,5 +10,8 @@
 
 @standar = Room.find(1)
 
-Secondlist.create! text: "TV", room: @standar
+#Secondlist.create! text: "TV", room: @standar
 
+#AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+
+Accomodation.create! name: "Apto 1", reserved: :false, room_id: 1

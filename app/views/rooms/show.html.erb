@@ -305,6 +305,17 @@
                                 </div>
                                 
                                 <div class="room-detail_form">
+
+                                    <%= form_tag("/step1",method: "get") do %>
+
+                                        <%= label_tag :Departure,"Departure" %>
+                                        <%= text_field_tag :departure_date, nil, class: "awe-calendar to", placeholder: "Departure Date"%>
+                                        <%= hidden_field_tag "room_id",@room.id %>
+                                         <%= submit_tag 'Book Now', :class => "awe-btn awe-btn-13" %>   
+
+                                    <% end %>
+
+
                                     <label>Arrive</label>
                                     <input type="text" class="awe-calendar from" placeholder="Arrive Date">
                                     <label>Depature</label>
@@ -323,7 +334,10 @@
                                         <option selected>3</option>
                                         <option>4</option>
                                     </select>
+                                    <%= @room.id%>
+                                    <%= link_to(step1_path, :id => @room.id) do %>
                                     <button class="awe-btn awe-btn-13">Book Now</button>
+                                    <% end %>
                                 </div>
 
                             </div>
